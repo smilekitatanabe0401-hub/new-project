@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PDF一覧</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+
+    <main class="container" aria-live="polite">
+      <header class="page-header">
+        <div class="brand-header">
+          <img id="site-logo" class="site-logo" src="./assets/smile-logo.png" alt="スマイル" width="320" />
+        </div>
+        <p class="eyebrow">LINE資料ポータル</p>
+        <h1 id="page-title">PDF一覧</h1>
+        <p id="page-description">必要な資料をすぐに見つけられます</p>
+      </header>
+
+      <section class="controls-panel" aria-label="検索と絞り込み">
+        <div class="controls">
+          <label class="field field-search">
+            <span>検索</span>
+            <div class="input-wrap">
+              <input id="search-input" type="search" placeholder="タイトル・カテゴリ・メモで検索" />
+              <button id="clear-search" type="button" class="clear-btn" aria-label="検索文字をクリア">
+                クリア
+              </button>
+            </div>
+          </label>
+
+          <label class="field">
+            <span>カテゴリ</span>
+            <select id="category-select"></select>
+          </label>
+
+          <label class="field">
+            <span>並び替え</span>
+            <select id="sort-select">
+              <option value="newest">日付が新しい順</option>
+              <option value="oldest">日付が古い順</option>
+              <option value="title">タイトル順</option>
+            </select>
+          </label>
+        </div>
+        <p id="results-count" class="results-count" aria-live="polite"></p>
+      </section>
+
+      <p id="status" class="status">読み込み中...</p>
+
+      <section id="pinned-section" class="list-section" hidden>
+        <h2>重要資料</h2>
+        <div id="pinned-list" class="card-list"></div>
+      </section>
+
+      <section id="regular-section" class="list-section" hidden>
+        <h2>PDF一覧</h2>
+        <div id="regular-list" class="card-list"></div>
+      </section>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
