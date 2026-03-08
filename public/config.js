@@ -4,7 +4,7 @@ window.PDF_LIST_CONFIG = {
   branding: {
     logoAlt: "スマイル",
     logoCandidates: [
-      "./assets/smile-logo.png",
+      "./assets/logo.png",
       "https://smileosaka.com/wp-content/uploads/2023/08/SmileGruop.png",
       "https://smileosaka.com/wp-content/uploads/2023/08/SmileGroup.png",
       "https://smileosaka.com/wp-content/uploads/2023/08/cropped-SmileGruop-130x72.png"
