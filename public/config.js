@@ -1,5 +1,5 @@
 window.PDF_LIST_CONFIG = {
-  csvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSvt9pOC4OkIyQysoeOVl99bgFz_Hd2Mni4GbOPno2rvXZHyW1r-MVA_JQYAVFJU7Ka3CEjEaE7qK1_/pubhtml,
+  csvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSvt9pOC4OkIyQysoeOVl99bgFz_Hd2Mni4GbOPno2rvXZHyW1r-MVA_JQYAVFJU7Ka3CEjEaE7qK1_/pubhtml",
   cacheBuster: true,
   branding: {
     logoAlt: "スマイル",
